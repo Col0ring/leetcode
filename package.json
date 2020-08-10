@@ -4,6 +4,11 @@
   "description": "leetcode 刷题题解",
   "repository": "https://github.com/Col0ring/leetcode.git",
   "author": "Col0ring <1561999073@qq.com>",
+  "scripts": {
+    "start": "ts-node",
+    "check": "tsc",
+    "check:watch": "tsc --watch"
+  },
   "license": "MIT",
   "devDependencies": {
     "ts-node": "^8.10.2",
