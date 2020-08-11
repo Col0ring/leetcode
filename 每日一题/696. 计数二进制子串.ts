@@ -23,7 +23,7 @@
 // }
 
 // 不用数组用 last 维护
-function countBinarySubstrings(s: string): number {
+export function countBinarySubstrings(s: string): number {
   let ptr = 0,
     n = s.length,
     last = 0,

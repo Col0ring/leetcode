@@ -1,7 +1,7 @@
 /**
  Do not return anything, modify matrix in-place instead.
  */
-function setZeroes(matrix: number[][]): void {
+export function setZeroes(matrix: number[][]): void {
   // 分别记录，然后分别清零
   const rows = new Set<number>()
   const cols = new Set<number>()

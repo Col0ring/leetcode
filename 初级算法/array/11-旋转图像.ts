@@ -2,7 +2,7 @@
  Do not return anything, modify matrix in-place instead.
  */
 // 本质还是找规律
-function rotate(matrix: number[][]): void {
+export function rotate(matrix: number[][]): void {
   const n = matrix.length
   for (let i = 0; i < n; i++) {
     for (let j = i; j < n; j++) {

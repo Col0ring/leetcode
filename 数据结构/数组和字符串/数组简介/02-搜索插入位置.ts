@@ -1,4 +1,4 @@
-function searchInsert(nums: number[], target: number): number {
+export function searchInsert(nums: number[], target: number): number {
   if (nums[0] > target) {
     return 0
   }

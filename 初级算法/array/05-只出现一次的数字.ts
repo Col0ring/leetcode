@@ -11,6 +11,6 @@
 // }
 
 // 异或
-function singleNumber(nums: number[]): number {
+export function singleNumber(nums: number[]): number {
   return nums.reduce((pre, next) => (pre ^= next), 0)
 }

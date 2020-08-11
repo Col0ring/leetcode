@@ -1,4 +1,4 @@
-function intersect(nums1: number[], nums2: number[]): number[] {
+export function intersect(nums1: number[], nums2: number[]): number[] {
   const mapHelper: any = {}
   const res: number[] = []
   for (const num1 of nums1) {

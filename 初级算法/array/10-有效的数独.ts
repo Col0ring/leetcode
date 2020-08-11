@@ -1,4 +1,4 @@
-function isValidSudoku(board: string[][]): boolean {
+export function isValidSudoku(board: string[][]): boolean {
   // 判断行和列
   const rowSet = new Set<string>()
   const colSet = new Set<string>()

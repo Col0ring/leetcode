@@ -4,7 +4,7 @@
 // }
 
 // 双端队列
-function reverseWords(s: string): string {
+export function reverseWords(s: string): string {
   s = s.trim()
   let ans: string[] = []
   let word = ''

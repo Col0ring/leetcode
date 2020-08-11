@@ -8,7 +8,7 @@
 //   return index ?? -1
 // }
 
-function strStr(haystack: string, needle: string): number {
+export function strStr(haystack: string, needle: string): number {
   if (!needle) {
     return 0
   }

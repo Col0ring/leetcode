@@ -27,7 +27,7 @@
 //     }
 // };
 
-function moveZeroes(nums: number[]): void {
+export function moveZeroes(nums: number[]): void {
   for (let i = 0, j = 0; i < nums.length; i++) {
     if (nums[i] !== 0) {
       const temp = nums[i]

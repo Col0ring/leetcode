@@ -20,7 +20,7 @@
 // }
 
 // 通过推入的方法
-function merge(intervals: number[][]): number[][] {
+export function merge(intervals: number[][]): number[][] {
   const len = intervals.length
   if (!len) {
     return intervals

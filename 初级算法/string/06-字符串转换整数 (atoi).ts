@@ -18,7 +18,7 @@
 // }
 
 // 官方自动机
-function myAtoi(str: string): number {
+export function myAtoi(str: string): number {
   // 自动机类
   class Automaton {
     // 执行阶段，默认处于开始执行阶段

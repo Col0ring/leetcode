@@ -1,7 +1,7 @@
 /**
      Do not return anything, modify board in-place instead.
     */
-function solve(board: string[][]): void {
+export function solve(board: string[][]): void {
   const rowLen = board.length
   if (!rowLen) {
     return

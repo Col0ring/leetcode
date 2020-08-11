@@ -1,4 +1,4 @@
-function reverse(x: number): number {
+export function reverse(x: number): number {
   let symbol = false
   if (x < 0) {
     symbol = true

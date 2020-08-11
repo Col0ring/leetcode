@@ -12,7 +12,7 @@
 //   return ans //最后返回结果
 // }
 
-function countAndSay(n: number): string {
+export function countAndSay(n: number): string {
   if (n === 1) {
     return '1'
   }

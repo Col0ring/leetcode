@@ -17,7 +17,7 @@
 // }
 
 // 循环
-function plusOne(digits: number[]): number[] {
+export function plusOne(digits: number[]): number[] {
   for (let i = digits.length - 1; i >= 0; i--) {
     digits[i]++
     digits[i] %= 10

@@ -1,4 +1,4 @@
-function longestPalindrome(s: string): string {
+export function longestPalindrome(s: string): string {
   const len = s.length
   if (!len || len === 1) {
     return s

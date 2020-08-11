@@ -20,7 +20,7 @@
 //   return -1
 // }
 
-function firstUniqChar(s: string): number {
+export function firstUniqChar(s: string): number {
   const mapHelper = new Map<string, boolean>()
   const indexMapHelper = new Map<string, number>()
   for (let i = 0; i < s.length; i++) {

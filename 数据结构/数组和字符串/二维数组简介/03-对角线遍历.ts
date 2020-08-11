@@ -1,4 +1,4 @@
-function findDiagonalOrder(matrix: number[][]): number[] {
+export function findDiagonalOrder(matrix: number[][]): number[] {
   const rowLen = matrix.length
   if (!rowLen) return []
   const colLen = matrix[0].length
