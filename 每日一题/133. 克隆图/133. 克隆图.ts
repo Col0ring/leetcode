@@ -27,7 +27,7 @@ class Node {
 // }
 
 // dfs
-export function cloneGraph(node: Node) {
+export function cloneGraph(node: Node): Node | null {
   if (!node) return null
   const map = new Map<number, Node>()
   const stack = [node]
