@@ -1,7 +1,7 @@
 // Initialize your data structure here.
 // */
 type TrieNodeMap = Map<string, TrieNodeMap>
-class WordDictionary {
+export class WordDictionary {
   root: TrieNodeMap
   constructor() {
     this.root = new Map()
