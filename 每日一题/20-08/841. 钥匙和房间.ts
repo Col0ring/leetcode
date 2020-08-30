@@ -25,7 +25,6 @@
 // dfs
 export function canVisitAllRooms(rooms: number[][]): boolean {
   let ans = 0
-  // bfs
   const seen = new Set<number>()
   const dfs = (x: number) => {
     seen.add(x)
