@@ -1,4 +1,4 @@
-function canVisitAllRooms(rooms: number[][]): boolean {
+export function canVisitAllRooms(rooms: number[][]): boolean {
   let ans = 0
   // bfs
   const seen = new Set<number>()

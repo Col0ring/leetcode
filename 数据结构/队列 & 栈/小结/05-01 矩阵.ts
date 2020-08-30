@@ -1,5 +1,5 @@
 // 队列 bfs
-function updateMatrix(matrix: number[][]): number[][] {
+export function updateMatrix(matrix: number[][]): number[][] {
   const rowLen = matrix.length
   if (!rowLen) {
     return []
