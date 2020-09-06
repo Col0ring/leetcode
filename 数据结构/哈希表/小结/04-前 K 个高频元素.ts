@@ -2,7 +2,7 @@
 //   const mapHelper: { [key: string]: number } = {}
 //   for (let i = 0; i < nums.length; i++) {
 //     if (mapHelper[nums[i]]) {
-//       mapHelper[nums[i]++]
+//       mapHelper[nums[i]]++
 //     } else {
 //       mapHelper[nums[i]] = 1
 //     }
