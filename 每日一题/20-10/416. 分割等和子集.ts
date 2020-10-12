@@ -1,4 +1,4 @@
-function canPartition(nums: number[]): boolean {
+export function canPartition(nums: number[]): boolean {
   const n = nums.length
   if (n < 2) {
     return false
