@@ -1,22 +1,32 @@
+/**
+ * Definition for Node.
+ * class Node {
+ *     val: number
+ *     left: Node | null
+ *     right: Node | null
+ *     next: Node | null
+ *     constructor(val?: number, left?: Node, right?: Node, next?: Node) {
+ *         this.val = (val===undefined ? 0 : val)
+ *         this.left = (left===undefined ? null : left)
+ *         this.right = (right===undefined ? null : right)
+ *         this.next = (next===undefined ? null : next)
+ *     }
+ * }
+ */
+
 class Node {
   val: number
-  next: Node | null
   left: Node | null
   right: Node | null
-  constructor(
-    val?: number,
-    left?: Node | null,
-    right?: Node | null,
-    next?: Node | null
-  ) {
+  next: Node | null
+  constructor(val?: number, left?: Node, right?: Node, next?: Node) {
     this.val = val === undefined ? 0 : val
-    this.next = next === undefined ? null : next
     this.left = left === undefined ? null : left
     this.right = right === undefined ? null : right
+    this.next = next === undefined ? null : next
   }
 }
 
-// bfs,与上一题一样
 export function connect(root: Node | null): Node | null {
   if (!root) {
     return null
