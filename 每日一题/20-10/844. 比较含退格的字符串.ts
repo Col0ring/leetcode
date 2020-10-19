@@ -1,5 +1,5 @@
 // 栈
-function backspaceCompare(S: string, T: string): boolean {
+export function backspaceCompare(S: string, T: string): boolean {
   const SArr: string[] = []
   const TArr: string[] = []
   let lenS = 0
