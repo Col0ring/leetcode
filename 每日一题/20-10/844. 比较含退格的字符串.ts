@@ -1,21 +1,28 @@
+// 栈
 function backspaceCompare(S: string, T: string): boolean {
-  let i = S.length - 1,
-    j = T.length - 1
-  let sc = 0,
-    tc = 0
-  while (i >= 0 || j >= 0) {
-    while (S[i] === '#') sc++, i--
-    while (T[j] === '#') tc++, j--
+  const SArr: string[] = []
+  const TArr: string[] = []
+  let lenS = 0
+  let lenT = 0
+  while (lenS < S.length || lenT < T.length) {
+    if (lenS !== S.length) {
+      if (S[lenS] === '#') {
+        SArr.pop()
+      } else {
+        SArr.push(S[lenS])
+      }
 
-    while (sc && S[i] !== '#') sc--, i--
-    while (tc && T[j] !== '#') tc--, j--
+      lenS++
+    }
 
-    if (S[i] !== '#' && T[j] !== '#') {
-      // 当两个都不是 #
-      if (S[i] !== T[j]) return false
-      i--
-      j--
+    if (lenT !== T.length) {
+      if (T[lenT] === '#') {
+        TArr.pop()
+      } else {
+        TArr.push(T[lenT])
+      }
+      lenT++
     }
   }
-  return true
+  return SArr.join() === TArr.join()
 }
