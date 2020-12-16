@@ -1,4 +1,4 @@
-function groupAnagrams(strs: string[]): string[][] {
+export function groupAnagrams(strs: string[]): string[][] {
   const ans: string[][] = []
   const mapHelper = new Map<string, string[]>()
   for (let i = 0; i < strs.length; i++) {
