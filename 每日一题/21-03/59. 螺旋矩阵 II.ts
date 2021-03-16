@@ -2,7 +2,9 @@
 export function generateMatrix(n: number): number[][] {
   const maxNum = n * n
   let curNum = 1
-  const matrix: number[][] = []
+  const matrix: number[][] = new Array(n)
+    .fill(0)
+    .map(() => new Array(n).fill(0))
   let row = 0,
     column = 0
   const directions = [
