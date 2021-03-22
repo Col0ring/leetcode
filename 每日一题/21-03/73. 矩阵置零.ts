@@ -1,6 +1,7 @@
 /**
  Do not return anything, modify matrix in-place instead.
  */
+// 标记数组，需要开空间
 export function setZeroes(matrix: number[][]): void {
   const m = matrix.length,
     n = matrix[0].length
