@@ -1,5 +1,5 @@
 // 1 的数量减去 0 的数量等于 0
-function findMaxLength(nums: number[]): number {
+export function findMaxLength(nums: number[]): number {
   let maxLength = 0
   const map = new Map<number, number>()
   // 把 0 看做 -1
