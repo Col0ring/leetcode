@@ -19,3 +19,9 @@ const insert = (s: string, freq: Map<string, number>) => {
   }
   return freq
 }
+
+function fun<T extends any[]>(a: [...T]) {
+  a[0] = 's'
+  return a
+}
+fun([2, 2, '1'])
