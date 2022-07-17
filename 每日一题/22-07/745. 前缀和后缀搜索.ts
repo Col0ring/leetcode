@@ -19,7 +19,7 @@ export class WordFilter {
 
   f(pref: string, suff: string): number {
     if (this.dictionary.has(pref + '#' + suff)) {
-      return this.dictionary.get(pref + '#' + suff)
+      return this.dictionary.get(pref + '#' + suff)!
     }
     return -1
   }
